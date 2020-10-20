@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "Lato", sans-serif;
+}
+
+#board-container {
+    width: 100vh;
+    height: 100vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.cell {
+    overflow: hidden;
+    float: left;
+    box-shadow: 0px 0px 3px 2px grey;
+    cursor: pointer;
+    background-color: rgb(163, 162, 162);
+}
+
+.revealed {
+    cursor: default !important;
+}
+
+.emptyCell {
+    background: white !important;
+}
+
+.bombCell {
+    overflow: hidden;
+    background-color: red;
+    background-image: url("../img/mine.png");
+    background-size: 100% 100%;
+}
+
+.numberedCell {
+    background: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.numberHolder {
+    width: 100%;
+    text-align: center;
+}
+
+.one {
+    color: blue;
+}
+
+.two {
+    color: green;
+}
+
+.three {
+    color: red;
+}
+
+.four {
+    color: rgb(176, 2, 206);
+}
+
+.flaged {
+    overflow: hidden;
+    background-color: white;
+    background-image: url("../img/flag.png");
+    background-size: 100% 100%;
+}
+
+#info-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#flag-count,
+#timer {
+    font-size: 30px;
+    margin: 0 20px;
+    color: rgb(23, 161, 23);
+}
+
+#modal-page-container {
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    width: 100vw;
+    transition: opacity 0.3s linear;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#cells-container {
+    width: 100%;
+}
+
+#modal-page-info {
+    font-size: 30px;
+    text-align: center;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+}
+
+#button-container > input {
+    outline: none;
+    cursor: pointer;
+    padding: 6px;
+    border: 1px solid lightgrey;
+    background-color: #fff;
+    margin: 0 10px;
+}
+
+.hidden {
+    opacity: 0 !important;
+}
+
+#selection-container {
+    margin-left: 20px;
+    display: flex;
+}
+
+#confirm-type-selection {
+    margin: 0 10px;
+    padding: 4px;
+}

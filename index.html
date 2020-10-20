@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+    <div id="board-container">
+        <div id="info-panel">
+            <span id="flag-count">Flags:</span>
+            <span id="timer">00 : 00</span>
+            <div id="selection-container">
+                <select id="types"></select>
+                <input id="confirm-type-selection" type="button" value="Select">
+            </div>
+        </div>
+        <div id="cells-container"></div>
+    </div>
+    <div id="modal-page-container">
+        <div id="modal-page-content">
+            <p id="modal-page-info"></p>
+            <div id="button-container">
+                <input type="button" id="restart" value="Restart">
+                <input type="button" id="see-board" value="See Board">
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/scripts/board.js"></script>
+    <script src="assets/scripts/main.js"></script>
+</body>
+
+</html>
